@@ -30,10 +30,12 @@ github_username: lshtech2021
 sidebar: true
 
 # Build settings
-theme: minimal
+# theme: minimal
+remote_theme: lshtech2021/minimal
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 markdown: kramdown
 
