@@ -1,3 +1,10 @@
+---
+layout: post
+title: "How to Install ownCloud on CentOS 7"
+date: 2021-10-10 09:50:00 -0000
+categories: ownCloud CentOS
+---
+
 ## Introduction
 
 **OwnCloud** is a popular and open source file hosting service. You can deploy OwnCloud in your own server and secure your files by multi-factor authentication, encryption, and file lifecycle management. You can also share files with others and control users' access right of the files and folders.
@@ -25,9 +32,10 @@ Download and prepare MySQL repository:
     $ rpm -Uvh mysql80-community-release-el7-3.noarch.rpm
 
 Note, if you don't use `--no-check-certificate` option, this command may prompt following error:
+
     ERROR: cannot verify download.opensuse.org's certificate, issued by ‘/C=US/O=Let's Encrypt/CN=R3’:
       Issued certificate has expired.
-    To connect to download.opensuse.org insecurely, use `--no-check-certificate'.
+    To connect to download.opensuse.org insecurely, use `--no-check-certificate`.
 
 It's ready to install MySQL now:
 
@@ -78,15 +86,15 @@ Input your new MySQL root user password, if the installation works, you will log
 
 Install httpd with following command:
 
-   $ yum -y install httpd mod_ssl
+    $ yum -y install httpd mod_ssl
 
 Start the service:
 
-   $ systemctl start httpd.service
+    $ systemctl start httpd.service
 
 Check service status:
 
-   $ systemctl status httpd.service
+    $ systemctl status httpd.service
 
 When the following message, means it is running:
 
