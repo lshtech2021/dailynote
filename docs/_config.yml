@@ -22,8 +22,9 @@ title: Tech Daily Notes
 email: haddy2014@163.com
 description: >- # this means to ignore newlines until "baseurl:"
   Share some interesting information about software design and development technology.
-baseurl: "/dailynote" # the subpath of your site, e.g. /blog
-url: "https://lshtech2021.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+#baseurl: "/dailynote" # the subpath of your site, e.g. /blog
+baseurl: ""
+url: "https://lshtech2021.github.io/dailynote" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username: lshtech2021
 
@@ -31,7 +32,10 @@ sidebar: true
 
 # Build settings
 # theme: minimal
-remote_theme: lshtech2021/minimal
+#remote_theme: pages-themes/minimal@v0.2.0
+remote_theme: pages-themes/cayman@v0.2.0
+
+# remote_theme: lshtech2021/minimal
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -40,7 +44,7 @@ plugins:
 markdown: kramdown
 
 include:
-  _posts/
+  - _posts/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -61,5 +65,3 @@ include:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-theme: jekyll-theme-cayman
